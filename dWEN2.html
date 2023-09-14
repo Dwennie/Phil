@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Phil Steven</title>
+<style>
+  body {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background-image: url('Pictures/Cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 3s ease-in forwards;
+ }
+
+ @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+    p {
+    text-align: justify;
+    text-indent: 2em;
+	color: white;
+ 
+  }
+  
+  .play-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .contact-links {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .contact-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px; 
+  }
+  button {
+  position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+	}
+  
+ 
+</style>
+</head>
+<body>
+
+  <u>About Us</u>
+  <p>The safespace department was first created as a school project by our founder Phil Steven, but overtime was developed to a messaging site as a hobby, eventually the site started its public access in a github repository for fun, and eventually due to popular use and demand is now it's own domain as a full fledge messaging website that is a safespace for every one of us.
+  <div class="contact-links">
+    <a href="mailto:philstevencabz@gmail.com">Gmail</a>
+    <a href="https://www.facebook.com/profile.php?id=100088153537237">Facebook</a>
+	<a href="Hobbies.html">Hobbies</a>
+  </div>
+  
+  <audio id="music" src="hapi-hapi.mp3"></audio>
+  <button class="play-button" onclick="togglePlay()">Yudi's Music</button>
+
+  <img src="Pictures/fast-cat-cat-excited.gif" alt="Excited Cat">
+  <img src="Pictures/dog-dance.gif" alt="Dancing Dog">
+  
+<script>
+  var audio = document.getElementById("music");
+  
+  function togglePlay() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
+</body>
+</html>

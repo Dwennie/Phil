@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phil Steven</title>
+  <style>
+    body {
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      background-image: url("13295064_5172658.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+    p {
+      text-align: justify;
+      color: white;
+      margin-bottom: 20px;
+    }
+    
+    .play-button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .contact-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <u>Phil Steven C. Cabanelez</u>
+  <p>Phil Steven is an 18-year-old grade 12 student in Sandingan National High School. He is majoring in Computer Systems Servicing in ICT. He's 157cm tall, and weighs 85kg. His hobbies are gaming, music, and watching anime. He also loves animals and memes. He's someone you can approach easily if you want to ask him for help. His ambition is to become a fully-fledged airline pilot to travel the world.</p>
+  
+  <div class="contact-links">
+    <a href="mailto:philstevencabz@gmail.com">Gmail</a>
+    <a href="https://www.facebook.com/profile.php?id=100088153537237">Facebook</a>
+  </div>
+  
+  <audio id="music" src="hapi-hapi.mp3"></audio>
+  <button class="play-button" onclick="togglePlay()">Yudi's Music</button>
+
+  <img src="fast-cat-cat-excited.gif" alt="Excited Cat">
+  <img src="dog-dance.gif" alt="Dancing Dog">
+  
+  <script>
+    var audio = document.getElementById("music");
+  
+    function togglePlay() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+</body>
+</html>
